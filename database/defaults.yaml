@@ -1,0 +1,31 @@
+# Defaults yaml file configuration for NESS
+structure_file:
+    required: 1
+    dtype: string
+metal_work_function:
+    value:  4.4
+    range: [4.0, 5.0]
+metal_work_function2 : 30
+test_val: 
+    range: [-2, 10]
+pot_old : 
+    value: false
+eta :
+    range: [0, 2]
+e_min : 0.3
+e_max : 1.0
+dE : 1e-3
+dE_tail : 1.0   
+gate_length : -10000.0
+
+dd_max_iterations: 1000
+dd_convergence: 0.01
+
+s_factor : 1.0
+l_decay : 1e4
+
+temperature : 300
+
+# Tolerances
+xtol: 1e-4
+self_consistency_xtol: 1e-3

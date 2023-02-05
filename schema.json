@@ -1,0 +1,13 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "NESS input file schema",
+    "description": " JSON Schema for NESS input files",
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+        "Eta_infinitesimal": {},
+        "verbose": {},
+        "include-path": {},
+        "input-file": {}
+    }
+}

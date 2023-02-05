@@ -1,0 +1,42 @@
+# Material file for Ness
+# Each file starts with the keyword 'mat'
+# followed by the name of the material
+
+mat:
+    Air:
+        permittivity: 11.7
+        affinity: 4.07274
+        band_gap: 1.19605
+        e_valley_number: 3
+        e_valley_degen: [2, 2, 2]
+        e_mass_x: [0.956027, 0.238263, 0.238263]
+        e_mass_y: [0.184713, 0.486363, 0.531715]
+        e_mass_z: [0.533362, 1.10043, 0.983393]
+        e_non_para: [0.0, 0.0, 0.0]
+        e_band_edge: [0.0, 0.0, 0.0]
+        e_mobility: 1400
+        
+        h_valley_number: 2
+
+        # Heavy hole valley
+        h_valley_degen: [1,1]
+        h_mass_x: [0.989, 0.279]
+        h_mass_y: [0.989, 0.279]
+        h_mass_z: [0.989, 0.279]
+        h_non_para: [0.0,0.0]
+        h_band_edge: [-1.12416, -1.12416]
+
+        h_mobility: 1400
+
+        d_pot_ac: 9.500
+        mass_density: 	2.329
+        sound_velocity: 9040
+        phon_numb_type_one: 3
+        phon_numb_type_two: 3
+        phon_ener_type_one: [0.012,  0.019, 0.063]
+        phon_def_pot_type_one: [0.500, 0.800, 11.000]
+        phon_ener_type_two: [0.019, 0.047, 0.059]
+        phon_def_pot_type_two: [0.300, 2.000, 2.000]
+
+        group : 4
+

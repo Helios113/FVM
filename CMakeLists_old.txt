@@ -1,0 +1,48 @@
+cmake_minimum_required(VERSION 3.23.2)
+
+
+# ---- Guards ----
+# if(CMAKE_SOURCE_DIR STREQUAL CMAKE_BINARY_DIR)
+#     message(FATAL_ERROR "In-source builds not allowed. Create a build directory and run CMake from there.")
+# endif()
+
+# Project info
+
+project(ness)
+
+find_package(Boost REQUIRED COMPONENTS
+             program_options)
+
+find_package(Conduit REQUIRED)
+
+include_directories(${Boost_INCLUDE_DIRS})
+
+
+add_subdirectory(libs)
+
+
+set_property(TARGET ${PROJECT_NAME} PROPERTY CXX_STANDARD 11)
+
+
+# # Link libraries 
+target_link_libraries(${PROJECT_NAME} ${Boost_LIBRARIES})
+# target_link_libraries(${PROJECT_NAME} ${Boost_PROGRAM_OPTIONS_LIBRARY_DEBUG})
+
+target_link_libraries(${PROJECT_NAME} conduit::conduit)
+# target_link_libraries(${PROJECT_NAME} Boost::program_options)
+install(TARGETS ${PROJECT_NAME}
+    DESTINATION ${CMAKE_INSTALL_PREFIX}
+    )
+
+# The executable code is here
+# add_subdirectory(lib)
+
+
+### CMake Resources ###
+# https://enccs.github.io/cmake-workshop/
+# https://cliutils.gitlab.io/modern-cmake/chapters/basics.html
+# https://kubasejdak.com/19-reasons-why-cmake-is-actually-awesome
+# https://www.youtube.com/watch?v=H14CSWkLGUY
+# https://bastian.rieck.me/blog/posts/2018/cmake_tips/
+
+

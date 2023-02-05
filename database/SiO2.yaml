@@ -1,0 +1,33 @@
+# Material file for Ness
+# Each file starts with the keyword 'mat'
+# followed by the name of the material
+
+
+mat:
+    SiO2:
+        permittivity:   3.9
+        affinity:	0.9
+        band_gap:	9.0
+        e_valley_number: 1
+        e_valley_degen: [1.0]
+        e_mass_x: [0.22]
+        e_mass_y: [0.22]
+        e_mass_z: [0.22]
+        e_non_para: [0.0] 
+        e_band_edge: [3.17274]
+        e_mobility: 0.0
+
+        h_valley_number: 1
+        h_valley_degen: [1]
+        h_mass_x: [0.22]
+        h_mass_y: [0.22]
+        h_mass_z: [0.22]
+        h_non_para: [0.0]
+        h_band_edge: [-5.82726]
+        h_mobility: [0.0]
+
+        group: 4
+        
+
+
+

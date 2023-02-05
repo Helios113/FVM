@@ -1,0 +1,8 @@
+add_subdirectory(cli)
+add_subdirectory(msg)
+add_subdirectory(interpreter)
+add_subdirectory(grid)
+add_subdirectory(ness)
+add_subdirectory(crypto)
+add_subdirectory(vis)
+add_subdirectory(poisson)
